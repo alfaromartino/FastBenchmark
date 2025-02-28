@@ -1,6 +1,6 @@
-module FastBenchmark
-
 using Chairmarks
+
+module FastBenchmark
 
 function mybenchmark_implementation(expr)
     quote
