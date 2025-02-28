@@ -1,13 +1,2 @@
-name = "FastBenchmark"
-uuid = "974866da-c0a3-4b9c-b998-0c4bbc08af3e"
-authors = ["alfaromartino <alfaromartino@gmail.com> and contributors"]
-version = "1.0.0-DEV"
-
-[compat]
-julia = "1.6.7"
-
-[extras]
-Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
-
-[targets]
-test = ["Test"]
+[deps]
+Chairmarks = "0ca39b1e-fe0b-4e98-acfc-b1656634c4de"
