@@ -1,11 +1,11 @@
-using Chairmarks
-
 module FastBenchmark
+
+using Chairmarks
 
 function mybenchmark_implementation(expr)
     quote
-        object = @b $(expr)
-        result      = sprint(show, "text/plain", object)
+        object = Chairmarks.@b $(expr)
+        result = sprint(show, "text/plain", object)
         
         if object.allocs == 0
             result *= " (0 allocations: 0 bytes)"
